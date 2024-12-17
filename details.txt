@@ -1,0 +1,25 @@
+express - to create app
+cors - to connect frontend with backend
+dotenv - to store our database details
+nodemon - to automatically show/save changes when we do changes in codefile
+jsonwebtoken - use tokens for authentications
+mongoose - to connect with mongodb database
+bcryptjs - to encrypt the password and save in databse
+nodemailer - to send the email
+cookie-parser - to send the cookies in API response
+
+"server": "nodemon server.js" at 
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js" 
+  },
+here used to restart the server automatically when we do changes in code in app.
+
+Store the user data in database we use models in server.
+
+The token is generated and sent to the client upon successful user authentication. It serves as proof of identity for the user and allows them to access protected routes or resources.
+
+*** While email and password are used once to authenticate a user during login, you cannot send the email and password with every request. This is both insecure and inefficient. Instead, after the user logs in, you issue a token (like JWT) to remember their identity for subsequent requests. *** 
+
+Connection URL - mongodb+srv://rahavi:<db_password>@cluster0.vva3r.mongodb.net/
