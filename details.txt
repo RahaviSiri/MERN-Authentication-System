@@ -23,5 +23,14 @@ The token is generated and sent to the client upon successful user authenticatio
 *** While email and password are used once to authenticate a user during login, you cannot send the email and password with every request. This is both insecure and inefficient. Instead, after the user logs in, you issue a token (like JWT) to remember their identity for subsequent requests. *** 
 
 Connection URL - mongodb+srv://rahavi:<db_password>@cluster0.vva3r.mongodb.net/
+MONGODB_URL = "mongodb+srv://rahavi:rahavi1234@cluster0.vva3r.mongodb.net"
+JWT_SECRET = "rahavi1234"
+
+NODE_ENV = 'development'
+
+SMTP_USER = "8223cf001@smtp-brevo.com"
+SMTP_PASSWORD = "p4vatJPLRBAMDUNk"
+
+SENDER_EMAIL = "rahavi24siri@gmail.com"
 
 git branch --set-upstream-to=origin/main Rahavi0001
