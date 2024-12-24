@@ -33,4 +33,6 @@ SMTP_PASSWORD = "p4vatJPLRBAMDUNk"
 
 SENDER_EMAIL = "rahavi24siri@gmail.com"
 
+VITE_BACKEND_URL = "http://localhost:300"
+
 git branch --set-upstream-to=origin/main Rahavi0001
