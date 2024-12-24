@@ -12,7 +12,8 @@ connectDB();
 
 app.use(express.json()); // All request passes in JSON format
 app.use(cookieParser());
-app.use(cors({credentials : true})); // Can send cookies from express app
+const allowedOrigins = ["http://localhost:5173"];
+app.use(cors({origin: allowedOrigins, credentials : true})); // Can send cookies from express app
 
 // API Endpoints
 app.get("/",(req,res) => {
