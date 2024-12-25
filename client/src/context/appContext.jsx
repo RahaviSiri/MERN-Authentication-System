@@ -7,6 +7,10 @@ export const AppContent = createContext();
 // This creates a Context object called AppContent.
 
 export const AppContextProvider = (props) => {
+
+    axios.defaults.withCredentials = true;
+    // With API calls we are sending cookies.
+    // To avoid loss of login when page is refreshed. 
     
     const backendURL = import.meta.env.VITE_BACKEND_URL;
     const [isLoggedIn,setIsLoggedIn] = useState(false);
